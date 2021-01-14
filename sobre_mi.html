@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, APS, JS, META, INFORMACION PERSONAL">
+    <title>Sobre Mi</title>
+    <link href="imagenes\arrow2189.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Stylesheet1.css" type="text/css">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/1de7dc9e65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="img-fluid" id="bm" src="imagenes\largelogo.jpg" width="1300rem"  alt="Logotipo" >
+        </div>
+        <h1 id="Inicio" class="animate__animated animate__headShake">Indumentaria Mamba Mentality</h1>
+        <nav>
+            <div id="navbar">
+                <li id="let"><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
+                <li id="let"><a href="productos.html"><i class="fas fa-tshirt fa-2x"></i></a></li>
+                <li id="let"><a href="carrito.html"><i class="fas fa-cart-plus fa-2x"></i></a></li>
+                <li id="let"><a href="sobre_mi.html" class="active"><i class="fas fa-user-alt fa-2x"></i></a></li>
+                <li id="let"><a href="contacto.html"><i class="fas fa-id-card fa-2x"></i></a></li>
+            </div>
+        </nav>
+    </header>
+
+    <h2 id="let">Sobre Mi</h2>
+
+    <div class="container">
+        <img class="image" src="imagenes/foto.jpg" alt="Foto de Perfil" width="85%"> 
+        <div class="overlay">
+            <div class="mi"><p>Hola, mi nombre es Gian Marchetti y tengo 20 años. Soy estudiante de profesorado de educación física y, durante la cuarentena, me adentré en el mundo del desarrollo web y decidí dedicarme a esto mientras continuo con mi carrera. Soy fanático del basketball y de los deportes en general, me encanta la tecnología y estar en continuo aprendizaje.</p></div>
+        </div>   
+    </div>
+
+    <footer>
+        <img class="none" src="imagenes/arrow2189.png" alt="logo" width="40px"><br><br>
+        <p>Copyright © 2020 <strong class="scg">Sitio creado por Gian Luca Marchetti</strong></p>
+        <h3>Seguime en mis redes</h3>
+        <a href="https://www.instagram.com/gian_marchetti/?hl=es-la"><img class="none" src="imagenes\insta.png" alt="instagram" width="50px"></a>
+        <a href="https://twitter.com/GianMarchetti8"><img class="none" src="imagenes\Tw.png" alt="twitter" width="48px"></a>
+        <a href="https://www.facebook.com/gianluca.marchetti.794"><img class="none" src="imagenes\face.png" alt="facebook" width="50px"></a>
+        <br>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+  
+        var navbar = document.getElementById("navbar");
+  
+        var sticky = navbar.offsetTop;
+  
+         function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+</body>
+</html>

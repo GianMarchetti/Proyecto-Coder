@@ -1,0 +1,24 @@
+$btns: (
+        finalizar: #55acee,
+        seguir:  rgb(25, 186, 10),
+        cupon: #C25E30,
+); 
+
+@each $red, $color in $btns {
+   .btn--#{$red} {
+       border-color: $color;
+   }
+}
+h4{
+    font-size: 8vh;
+}
+h5{
+    font-size: 3vh;
+}
+#btjs {
+  margin-bottom: 3%;
+}
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
