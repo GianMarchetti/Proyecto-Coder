@@ -1,59 +1,27 @@
-// desafio clase 6-----------------------------------------------------------------------------------------------------------------
-const dias = ["lunes", "martes", "miercoles"];
-let dias2 = new Array("jueves", "viernes", "sabado", "domingo");
+window.onscroll = function() { myFunction() };
 
-const semana = [...dias, ...dias2];
-console.log(semana)
+let navbar = document.getElementById("navbar");
 
-const Lebron = [17, 'nike', true, { precio: 8200, stock: "no disponible" },
-    [1, "dos", 3]
-];
-console.log(Lebron)
+let sticky = navbar.offsetTop;
 
-Lebron[3].stock = "disponible";
-// console.log(Lebron[3].stock)
-
-const tallesl = [...Lebron, "talle 35 a 45"]
-console.log(tallesl)
-
-// 1era entrega proyecto----------------------------------------------------------------------------------------------------------
-
-const producto1 = {
-        nombre: "Lebron17",
-        precio: 8200,
-        marca: "Nike",
-        talle: 43,
-        cant: 1,
-
-        mostrarInfo: function() {
-            console.log(`El producto: ${this.nombre} tiene un precio de $${this.precio}`);
-        }
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
     }
-    // const producto2 = {
-    //     nombre: "SpursManu",
-    //     precio: 8200,
-    //     marca: "Nike",
-    //     talle: "large",
-    //     cant: 1,
+}
 
-//     mostrarInfo: function() {
-//         console.log(`El producto: ${this.nombre} tiene un precio de $${this.precio}`);
+// window.onscroll = function() { stickycarrito() };
+
+// let minicarrito = document.getElementsByClassName('rcarrito');
+
+// let stick = minicarrito.offsetTop;
+
+// function stickycarrito() {
+//     if (window.pageYOffset >= sticky) {
+//         minicarrito.classList.add('sticky')
+//     } else {
+//         minicarrito.classList.remove('sticky')
 //     }
 // }
-// const producto3 = {
-//     nombre: "ShortAS",
-//     precio: 8200,
-//     marca: "Jordan",
-//     talle: "large",
-//     cant: 1,
-
-//     mostrarInfo: function() {
-//         console.log(`El producto: ${this.nombre} tiene un precio de $${this.precio}`);
-//     }
-// }
-console.log(producto1)
-    // console.log(producto2)
-    // console.log(producto3)
-
-let carrito = [`producto1`, `producto2`, `producto3`];
-console.table(carrito)

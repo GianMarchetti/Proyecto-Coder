@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,162 +9,239 @@
     <link href="imagenes\arrow2189.png" rel="icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/1de7dc9e65.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="CSS/Stylesheet1.css" type="text/css">
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
 </head>
+
 <body>
-  <div class="grid">
-    <header class="hd">
-        <h1 id="Inicio" class="animate__animated animate__headShake">Indumentaria Mamba Mentality</h1>
-        <nav>
-          <div id="navbar">
-            <li id="let"><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
-            <li id="let"><a href="productos.html" class="active"><i class="fas fa-tshirt fa-2x"></i></a></li>
-            <!-- <li id="let"><a href="carrito.html"><i class="fas fa-cart-plus fa-2x"></i></a></li> -->
-            <!-- <li id="let"><a href="sobre_mi.html"><i class="fas fa-user-alt fa-2x"></i></a></li> -->
-            <!-- <li id="let"><a href="contacto.html"><i class="fas fa-envelope fa-2x"></i></a></li> -->
-          </div>
-        </nav>
-    </header>
-    
-    <div class="two columns u-pull-right rcarrito">
-      <ul>
-      <li id="let" class="submenu"><a href="#"><i class="fas fa-cart-plus fa-4x"></i></a>
-      <div id="carrito">
-        <table id="lista-carrito" class="u-full-width">
-          <thead>
-            <tr>
-              <th>Imagen</th>
-              <th>Nombre</th>
-              <th>Precio</th>
-              <th>Cantidad</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-        <a href="carrito.html">Ir al Carrito</a>
-      </div>
-      </li>
-      </ul>
+    <div class="grid">
+        <header class="hd">
+            <h1 id="Inicio" class="animate__animated animate__headShake">Indumentaria Mamba Mentality</h1>
+            <nav>
+                <div id="navbar">
+                    <li id="let"><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
+                    <li id="let"><a href="productos.html" class="active"><i class="fas fa-tshirt fa-2x"></i></a></li>
+                    <!-- <li id="let"><a href="carrito.html"><i class="fas fa-cart-plus fa-2x"></i></a></li> -->
+                    <!-- <li id="let"><a href="index.html"><i class="fas fa-user-alt fa-2x"></i></a></li>
+                    <li id="let"><a href="index.html"><i class="fas fa-envelope fa-2x"></i></a></li> -->
+                </div>
+            </nav>
+        </header>
+
+        <div class="two columns u-pull-right rcarrito">
+            <ul>
+                <li id="let" class="submenu"><a href="#"><i class="fas fa-cart-plus fa-4x"></i></a>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        <a href="carrito.html">Ir al Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h2 class="h2p" id="let">Aquí podrás encontrar todos nuestros productos</h2>
+
+        <div>
+            <!-- <div id="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="six columns">
+                            <div class="contenido-hero">
+                                <p class="ftext">Los mejores productos</p>
+                                <form id="formulario" action="">
+                                    <input type="text" class="u-full-width" id="buscador" placeholder="Ingresa lo que quieres buscar">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="container-fluid ctf" id="lista-productos">
+            <div class="row">
+                <div class="card crd" style="width: 30rem;">
+                    <div class="card-body">
+                        <img class="img-fluid rounded ina" src="imagenes\camisetakobe.jpg" alt="Camiseta Kobe Bryant">
+                        <h4 class="strong"><strong class="card-title">Camiseta Lakers Kobe</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$15000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="1">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes\camperakobe.jpg" alt="Campera Lakers">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Campera Lakers 2002</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$16000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="5">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/ZapasKobe4.jpg" alt="Zapatillas Mamba Focus">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Nike Mamba Focus</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="14">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes\curry.jpg" alt="Camiseta Curry">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Camiseta GSW "City Edit"</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$15000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="3">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes\camisetamanu.jpg" alt="Camiseta Spurs Ginobili">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Camiseta Spurs Manu</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$15000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="2">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/pelota.jpg" alt="Pelota Oficial NBA">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Pelota Spalding Oficial NBA</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$14000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="10">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/shortAS.jpg" alt="Short All Star">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Short All Star 2020</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$8000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="18">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/gorra.jpg" alt="Gorra Bulls">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Gorra Chicago Bulls</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$6000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="6">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/ZapasKobe5.jpg" alt="Kobe Zoom venom">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas Kobe Venom</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="15">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/ZapasKobe6.jpg" alt="AD nxt 360">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas AD nxt 360</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="16">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/ZapasKobe3.jpg" alt="mamba instinct">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas mamba instinct</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="13">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/harden.jpg" alt="Camiseta Harden">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Camiseta Rockets Harden</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$15000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="4">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/kobeFS.jpg" alt="Finger Sleeve">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Finger Sleeve Kobe</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$4000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="7">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/kobesleeve.jpg" alt="Arm Sleeve">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Arm Sleeve Kobe</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$5000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="9">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/zapas.jpg" alt="Zapatillas AD Lakers">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas AD Lakers</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="11">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/zapas2.jpg" alt="Zapatillas Proto5 Lakers">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas Proto5 Lakers</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="12">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/ZapasKobe8.jpg" alt="Zapatillas Kobe 6 Black Yellow">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas Kobe 6 B&Y</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$16000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="8">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/mochila.jpg" alt="Mochila Golden State">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Mochila Golden State</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$7000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="17">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/lebron17.jpg" alt="Zapatillas Lebron 17">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Zapatillas Lebron 17</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$10000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="19">Añadir al carrito</a>
+                    </div>
+                </div>
+                <div class="card crd" style="width: 30rem;">
+                    <img class="img-fluid rounded ina1" src="imagenes/camperagsw.jpg" alt="Campera Golden State">
+                    <div class="card-body">
+                        <h4 class="strong"><strong class="card-title">Campera Golden State</strong></h4>
+                        <p class="precio"><span class="u-pull-right ">$11000</span></p>
+                        <a href="#" class="btn btn-primary agregar-carrito" data-id="20">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    
-    <h4 class="h2p" id="let">Aquí podrás encontrar todos nuestros productos.</h4>
-
-
-    
-    <button type="button" onclick="loadDoc()">Abrir el catalogo de productos</button>
-    <table id="demo"></table>
-
-    <div class="container-fluid ctf" id="lista-productos">
-      <div class="row">
-          <div class="card crd" style="width: 30rem;">
-            <div class="card-body">
-              <img class="img-fluid rounded ina" src="imagenes\camisetakobe.jpg" alt="Camiseta Kobe Bryant">
-              <h4 class="strong"><strong class="card-title">Camiseta Lakers Kobe</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="1">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card crd" style="width: 30rem;">
-            <img class="img-fluid rounded ina1" src="imagenes\camperakobe.jpg" alt="Campera Lakers">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Campera Lakers 2002</strong></h4>
-              <p class="precio"> <span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="2">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card crd" style="width: 30rem;">
-            <img class="img-fluid rounded ina4" src="imagenes/ZapasKobe4.jpg" alt="Zapatillas Mamba Focus">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Nike Mamba Focus</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="3">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded ina5" src="imagenes\curry.jpg" alt="Camiseta Curry">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Camiseta GSW "City Edit"</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="4">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded ina2" src="imagenes\camisetamanu.jpg" alt="Camiseta Spurs Ginobili">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Camiseta Spurs Manu</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="5">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded" src="imagenes/pelota.jpg" alt="Pelota Oficial NBA">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Pelota Spalding Oficial NBA</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="6">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded" src="imagenes/shortAS.jpg" alt="Short All Star">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Short All Star 2020</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="7">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded" src="imagenes/gorra.jpg" alt="Gorra Bulls">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Gorra Chicago Bulls</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="8">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded" src="imagenes/ZapasKobe5.jpg" alt="Kobe Zoom venom">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Zapatillas Kobe Venom</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="9">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded ina3" src="imagenes/ZapasKobe6.jpg" alt="AD nxt 360">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Zapatillas AD nxt 360</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="10">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded ina3" src="imagenes/ZapasKobe3.jpg" alt="mamba instinct">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Zapatillas mamba instinct</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="11">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="card marcd" style="width: 30rem;">
-            <img class="img-fluid rounded ina3" src="imagenes/harden.jpg" alt="Camiseta Harden">
-            <div class="card-body">
-              <h4 class="strong"><strong class="card-title">Camiseta Rockets Harden</strong></h4>
-              <p class="precio"><span class="u-pull-right ">$12000</span></p>
-              <a href="#" class="btn btn-primary agregar-carrito" data-id="12">Añadir al carrito</a>
-            </div>
-          </div>
-      </div>
-   </div>  
 
     <footer>
         <a href="#Inicio">
-        <img class="none" src="imagenes/arrow2189.png" alt="logo" width="2%">
+            <img class="none" src="imagenes/arrow2189.png" alt="logo" width="2%">
         </a>
         <p>Copyright © 2020 <strong class="scg">Sitio creado por Gian Luca Marchetti</strong></p>
         <h3>Seguime en mis redes</h3>
@@ -171,9 +249,10 @@
         <a href="https://twitter.com/GianMarchetti8"><img class="none" src="imagenes\Tw.png" alt="twitter" width="2%"></a>
         <a href="https://www.facebook.com/gianluca.marchetti.794"><img class="none" src="imagenes\face.png" alt="facebook" width="2%"></a>
     </footer>
-  </div>
-  <script src="js/scripts.js"></script>
-  <script src="js/carrito-proyecto.js"></script>
-  <script src="js/desafios.js"></script>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/carrito-proyecto.js"></script>
+    <!-- <script src="js/desafios.js"></script> -->
 </body>
+
 </html>

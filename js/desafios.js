@@ -168,7 +168,7 @@
 // }
 
 // CLASE 9 ----------------------------- EVENTOS ------------------------------------------------------
-  
+
 // function capturarEnter(e) {
 //     if (event.which == 13 || event.keyCode == 13) {
 //         console.log("Procesando datos");
@@ -182,11 +182,11 @@
 //     }
 
 //     const acc = document.getElementsByClassName("accordion");
-    
+
 //     for (let i = 0; i < acc.length; i++) {
 //       acc[i].addEventListener("click", function() {
 //         this.classList.toggle("active");
-    
+
 //         let panel = this.nextElementSibling;
 //         if (panel.style.display === "block") {
 //           panel.style.display = "none";
@@ -198,18 +198,18 @@
 
 // CLASE 12 --------------------------------- JQUERY ---------------------------------------------------------------
 
-window.addEventListener('load', function() {
-    console.log('Load')
-}) 
+// window.addEventListener('load', function() {
+//     console.log('Load')
+// }) 
 
-document.addEventListener('DOMContentLoaded', function (){
-    console.log('DOMContentLoaded')
-})
+// document.addEventListener('DOMContentLoaded', function (){
+//     console.log('DOMContentLoaded')
+// })
 
 
-$('h1').click(function() {
-    $('#carrito2').toggle();
-})
+// $('h1').click(function() {
+//     $('#carrito2').toggle();
+// })
 
 // $('#eliminar').click(function () {
 //     $('#seccion1').hide()
@@ -233,41 +233,42 @@ $('h1').click(function() {
 
 // CLASE 14 ----------------------- AJAX-------------------------
 
-$("button").click(function(){ 
-	$.ajax({
-	 url: "data/datos.json", //un archivo json con datos de usuarios: nombre, apellido, etc
-	 dataType: "json",
-	 success: function(response) {
-	   $.each(response.usuarios, function(item) {
-		 alert(item.nombre); 
-	   });
-	 }
-	});
-   
-   });
- 
-   
-   function loadDoc() {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-	  if (this.readyState == 4 && this.status == 200) {
-		myFunction(this);
-	  }
-	};
-	xhttp.open("GET", "catalog.xml", true);
-	xhttp.send();
-  }
-  function myFunction(xml) {
-	var i;
-	var xmlDoc = xml.responseXML;
-	var table="<tr><th>MARCA</th><th>MODELO</th></tr>";
-	var x = xmlDoc.getElementsByTagName("CD");
-	for (i = 0; i <x.length; i++) { 
-	  table += "<tr><td>" +
-	  x[i].getElementsByTagName("MARCA")[0].childNodes[0].nodeValue +
-	  "</td><td>" +
-	  x[i].getElementsByTagName("MODELO")[0].childNodes[0].nodeValue +
-	  "</td></tr>";
-	}
-	document.getElementById("demo").innerHTML = table;
-  }
+// $("button").click(function() {
+//     $.ajax({
+//         url: "data/datos.json", //un archivo json con datos de usuarios: nombre, apellido, etc
+//         dataType: "json",
+//         success: function(response) {
+//             $.each(response.usuarios, function(item) {
+//                 alert(item.nombre);
+//             });
+//         }
+//     });
+
+// });
+
+
+// function loadDoc() {
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             myFunction(this);
+//         }
+//     };
+//     xhttp.open("GET", "catalog.xml", true);
+//     xhttp.send();
+// }
+
+// function myFunction(xml) {
+//     var i;
+//     var xmlDoc = xml.responseXML;
+//     var table = "<tr><th>MARCA</th><th>MODELO</th></tr>";
+//     var x = xmlDoc.getElementsByTagName("CD");
+//     for (i = 0; i < x.length; i++) {
+//         table += "<tr><td>" +
+//             x[i].getElementsByTagName("MARCA")[0].childNodes[0].nodeValue +
+//             "</td><td>" +
+//             x[i].getElementsByTagName("MODELO")[0].childNodes[0].nodeValue +
+//             "</td></tr>";
+//     }
+//     document.getElementById("demo").innerHTML = table;
+// }

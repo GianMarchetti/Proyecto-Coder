@@ -1,0 +1,46 @@
+.btn--finalizar {
+  border-color: #55acee;
+}
+
+.btn--seguir {
+  border-color: #19ba0a;
+}
+
+.btn--cupon {
+  border-color: #C25E30;
+}
+
+h4 {
+  font-size: 8vh;
+}
+
+h5 {
+  font-size: 3vh;
+}
+
+#btjs {
+  margin-bottom: 3%;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=carrito.css.map */
